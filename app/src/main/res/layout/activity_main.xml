@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Noir">
+
+    <Button
+        android:id="@+id/launch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LAUNCH"
+        android:textColor="@color/Blanc"
+        android:background="@drawable/bouton_deux"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textviou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Blanc"
+        android:layout_above="@id/launch"/>
+
+    <TextView
+        android:id="@+id/textviou2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Blanc"
+        android:layout_above="@id/textviou"/>
+
+    <RelativeLayout
+        android:id="@+id/Rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@id/textviou2">
+
+        <TextView
+            android:id="@+id/textviou3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Noir"
+            android:text="AA"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ImgVw"
+            android:layout_below="@id/textviou3"
+                android:background="@drawable/icone"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
